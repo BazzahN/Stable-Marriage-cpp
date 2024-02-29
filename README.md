@@ -88,7 +88,7 @@ This is for individuals $A  = {1,2,3,4}$
 ### Compiling and Running main_2.cpp
 
 #### Step 1 & 2) Compiling Functions and Builing main_2.cpp
-Use the method from [**Task 1**](###Compiling) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
+Use the method from [**Task 1**](###compiling) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
 
 
 ## Task 3
