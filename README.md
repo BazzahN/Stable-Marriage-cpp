@@ -24,10 +24,18 @@ main_t1.cpp //Main source file
 
 ###Compiling
 
-> g
+#### Step 1
 
-
-
+Before compiling and building our main program we must compile all the functions it uses. Any C++ complier will likely be sufficient, but we used GNU Compiler Collection (GCC), so our tutorial will asume you are using this compiler.
+In our case we need to compile: **utils.cpp**, **IS_STABLE.cpp** and **fun_algo.cpp**. To build these files we can input the code below into the **Unix Shell**:
+```
+$ g++ --std=c++17 -c function_file_name.cpp
+```
+To ensure these files have been compiled correctly we can use the following command in the **Unix Shell**
+```
+$ ls *.o
+```
+We should see three .o object files if our task was successful. These files are our functions but translated to a format the computer can understand.
 ## Task 2
 
 ## Task 3
