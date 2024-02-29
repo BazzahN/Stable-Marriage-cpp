@@ -19,14 +19,14 @@ utils.h //Ditto for Utilities
 main_t1.cpp //Main source file 
 
 ```
-#### Description
+### File Description
 // In this section include a description for each of the files 
 
-#### Preference Tables and Potential Match 
+### Preference Tables and Potential Match 
 // In this section include the preference tables used in the code.
 
 
-###Compiling
+### Compiling
 
 #### Step 1) Compiling Functions
 
@@ -36,7 +36,7 @@ In our case we need to compile: **utils.cpp**, **IS_STABLE.cpp** and **fun_algo.
 ```
 $ g++ --std=c++17 -c function_file_name.cpp 
 ```
-**g++** calls out compiler, **--std=c++17** is the current version of C++ we are using and **-c** is compiling command.
+**g++** calls the compiler, **--std=c++17** is the current version of C++ we are using and **-c** is compiling command.
 
 To ensure these files have been compiled correctly we can use the following command in the **Unix Shell**
 ```
@@ -70,6 +70,26 @@ This should be our **output**, given the preference tables and matchs provdied i
 Output: Current Match is Stable
 ```
 ## Task 2
+We have modified our original source code; now it can read preference tables stored within a **comma seperated values (.csv)** type file. We have also added the ability for users to declare arguments for main while executing the file in the commmand line.
+
+If run correctly **main_2.out** will use the **fundamental algorithm** to find a stable matching from the preference tables within the specified (and correctly formatted) **.csv/.txt** files.
+
+### File Format
+Preference tables must be represented as an $NxN$ ',' seperated matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed).
+
+This is for individuals $A  = {1,2,3,4}$
+
+'''
+1,2,4,3 # <- 1s prefs for elements in B 
+3,1,4,2 # <- 2 ^       
+3,2,4,1 # <- 3 ^
+2,1,3,4 # <- 4 ^
+'''
+### Compiling and Running main_2.cpp
+
+#### Step 1 & 2) Compiling Functions and Builing main_2.cpp
+Use the method from [**Task 1**](###Compiling) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
+
 
 ## Task 3
 
