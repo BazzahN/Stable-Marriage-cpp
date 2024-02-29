@@ -25,7 +25,7 @@ main_t1.cpp //Main source file
 ### Preference Tables and Potential Match 
 // In this section include the preference tables used in the code.
 
-
+<a name="custom_anchor_name"></a>
 ### Compiling
 
 #### Step 1) Compiling Functions
@@ -88,7 +88,7 @@ This is for individuals $A  = {1,2,3,4}$
 ### Compiling and Running main_2.cpp
 
 #### Step 1 & 2) Compiling Functions and Builing main_2.cpp
-Use the method from [**Task 1**](###task-1) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
+Use the method from [**Task 1**](#custom_anchor_name) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
 
 
 ## Task 3
