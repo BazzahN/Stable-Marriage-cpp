@@ -3,10 +3,10 @@ This repository contains all my solutions to the C++ assignment. I also include 
 
 >Add a README markdown file containing instructions for compiling and running your code for each of the Tasks 1, 2, and 3. Check that your README file renders properly on github.
 
-## Task 1
+## Folders
 
-Contents of **Task 1** folder:
 ```
+//ALL FOLDERS WILL CONTAIN
 IS_STABLE.cpp
 IS_STABLE.h // Header .h and source file .cpp for IS_STABLE algorithm 
 
@@ -16,18 +16,32 @@ fun_algo.h // Ditto for the 'fundamental algorithm'
 utils.cpp
 utils.h //Ditto for Utilities
 
-main_t1.cpp //Main source file 
+//TASK 1
+main_1.cpp //Main C++ source file for Task 1
+
+//TASK 2
+main_2.cpp //Ditto for Task 2 
+
+//TASK 3
+main_3.cpp //Ditto for Task 3
+Results.ipynb //Results for execution time comparisons
+
 
 ```
+
+
+## Task 1
+
+
 ### File Description
 // In this section include a description for each of the files 
 
 ### Preference Tables and Potential Match 
 // In this section include the preference tables used in the code.
 
-<a name="custom_anchor_name"></a>
-### Compiling
 
+### Compiling 
+<a name="custom_anchor_name"></a>
 #### Step 1) Compiling Functions
 
 Before compiling and building our main program we must compile all the functions it uses. Any C++ complier will likely be sufficient, but we used [GNU Compiler Collection (GCC)](https://gcc.gnu.org/), so our tutorial will asume you are using this compiler.
@@ -88,10 +102,83 @@ This is for individuals $A  = {1,2,3,4}$
 ### Compiling and Running main_2.cpp
 
 #### Step 1 & 2) Compiling Functions and Builing main_2.cpp
-Use the method from [**Task 1**](#custom_anchor_name) to build **main_2.cpp**. This is the same procedure as **main_2.cpp** uses all the same functions as **main.cpp**
+Use the method from [**Task 1**](#custom_anchor_name) to build **main_2.cpp**. The procedure is identical as **main_2.cpp** uses all the same functions as **main.cpp**, just don't forget to change the name of main.
 
+#### Step 3) Running main_2.out (with command line arguments)
+
+We can run **main_2.out** the same way as before, only this time we specify the file names of our preference tables. I have used the names of the files included in the **Task 2** Folder:
+```
+$ ./main_2.out "prefF" "prefH"
+```
+
+Order of the file names doesn't matter, but the format of the identified matching will vary, i.e. if argument order is "fileA" "fileB" then the matchings will be represented like this
+$(A_1,B_1),(A_2,B_2)....(A_n,B_n)$. 
+
+For the files we have given in **Task 2** folder, the output will be:
+
+```
+Output:
+Stable Match Found! 
+
+Identified Pairings:
+Female | Male
+  1    |   2
+-------|-------
+  2    |   3
+-------|-------
+  3    |   4
+-------|-------
+  4    |   1
+-------|-------
+```
 
 ## Task 3
+In this task we compare the difference in runtimes for our implementation of the **fundamental algorithm** and **IS_STABLE** in **python** and **C++**. The report on this comparison has been made into a jupyter notebook, which can be found in the **Task 3** folder here. The report contains a description of the studys methods and results.
+
+We have modified our main file slightly for this study, but it can be compiled in the exact same way applied in previous tasks. The only difference is the inclusion of an additional argument; specifying the amount of times to repeat the fundamental algortihm. We include this extra argument as our algorithm is very fast. To calculate an accurate runtime we repeat $M$ times and divide the sum of these measurments by $M$. 
+
+The modified code is in **main_3.cpp**, build in the same way as **Task 1** and **Task 2**. You can then run **main_3.out** using the code below; include all the required arguments. :
+
+```
+$ ./main_3.out "filename1" "filename2" M
+
+```
+M must be a positive number of type **int**.
+
 
 
 ## Task 5
+
+This method-although not perfect in all ways-is an easy way to compile and run C++ programs in Windows. We make use of the **Integrated development environment (IDE)** [Code::Blocks](https://www.codeblocks.org/), as one version includes **MinGW**- a compiler based on **GCC** to build and run C++ files on Windows. The caveat is that it doesn not install **MinGW** at the system level, and so compiling these files can only be done in Code::Blocks.
+
+### Method
+
+#### Step 1) Install Code::Blocks w/ MinGW
+
+Start by heading to [Code::Blocks - Binary Releases]([https://www.codeblocks.org/](https://www.codeblocks.org/downloads/binaries/)https://www.codeblocks.org/downloads/binaries/)  and select the latest verson of **Code::Blocks w/ MinGW** with setup. 
+
+>codeblocks-20.03mingw-setup.exe
+
+You should have the option to download this file via **Sourceforge.net** or **FOSSHUB**, choose either.
+
+#### Step 2) Creating a Project
+
+Run the setup file with all default options. **If you are not an administrator you will need to log in with admin credentials**, if you do not have access to this information (you may be using a work or school computer) **you cannot proceed**.
+
+Once installed, run **Code::Blocks**; you should immediately encounter a dialog box, just click ok. Then in the toolbar select **File -> New -> Project**. A list of **project templates** should appear, select **Console application** and press go. 
+
+
+
+
+The **project wizard** will appear, proceed through each window. Select **C++** on the language options. Call your **project** an appropriate name and ensure its location is **within the same drive you installed Code::Blocks in** (in most cases that's C drive (C:))
+
+#### Step 3) Project and C++ Language Standard
+
+All our files our coded in **C++17** language standard, so we must also ensure our compile knows this. Navigate to **Toolbar -> Settings -> Compiler**. The **Global Compiler Settings** window should pop up. 
+
+
+**Tick the box** marked:
+
+> Have g++ follow the C++17 ISO C++ language standard [-std=c++17]
+
+
