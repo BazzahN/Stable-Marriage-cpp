@@ -8,14 +8,25 @@ This repository contains all my solutions to the C++ assignment. I also include 
 Contents of **Task 1** folder:
 ```
 IS_STABLE.cpp
-IS_STABLE.h
+IS_STABLE.h // Header .h and source file .cpp for IS_STABLE algorithm 
 
 fun_algo.cpp
-fun_algo.h
+fun_algo.h // Ditto for the 'fundamental algorithm'
 
-main_t1.cpp
+utils.cpp
+utils.h //Ditto for Utilities
+
+main_t1.cpp //Main source file 
 
 ```
+
+
+
+###Compiling
+
+> g
+
+
 
 ## Task 2
 
