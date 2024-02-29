@@ -1,6 +1,8 @@
 # Stable-Marriage-cpp
-Contains my solutions to the C++ assignment; translating the IS_STABLE and the fundamental algorithm from python to C++.
+This repository contains all my solutions to the C++ assignment. I also include brief descriptions on how to run the code for each of the tasks.
 
 
 
 ## Task 1
+
+
