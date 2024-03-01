@@ -165,7 +165,7 @@ You should have the option to download this file via **Sourceforge.net** or **FO
 
 Run the setup file with all default options. **If you are not an administrator you will need to log in with admin credentials**, if you do not have access to this information (you may be using a work or school computer) **you cannot proceed**.
 
-Once installed, run **Code::Blocks**; you should immediately encounter a dialog box, just click ok. Then in the toolbar select **File -> New -> Project**. A list of **project templates** should appear, select **Console application** and press go. 
+Once installed, run **Code::Blocks**; you should immediately encounter a dialog box, just click ok. Then in the toolbar select **File -> New -> Project**. A list of **project templates** should appear, select **Empty Project** and press go. 
 
 
 
@@ -176,9 +176,14 @@ The **project wizard** will appear, proceed through each window. Select **C++** 
 
 All our files our coded in **C++17** language standard, so we must also ensure our compile knows this. Navigate to **Toolbar -> Settings -> Compiler**. The **Global Compiler Settings** window should pop up. 
 
-
 **Tick the box** marked:
 
 > Have g++ follow the C++17 ISO C++ language standard [-std=c++17]
+
+#### Step 4) Project Files
+
+Download the **Task 5** header and source files from my repository here. Place them in the same directory as your **new empty project**. You need to tell **Code::Blocks** that the files are in the same directory, go to the toolbar **Project -> Add Files** and select all of the files you downloaded. 
+
+They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already declared. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. A **Windows Terminal** should appear with the correct output. 
 
 
