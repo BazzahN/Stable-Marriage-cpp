@@ -88,7 +88,7 @@ If run correctly **main_2.out** will use the **fundamental algorithm** to find a
 ### File Format
 Preference tables must be represented as an $NxN$ ',' seperated matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed).
 
-This is for individuals $A  = \{1,2,3,4\}$
+This is for individuals $A  =$ $`\{1,2,3,4\}`$
 
 ```
 1,2,4,3 // <- 1s prefs for elements in B 
