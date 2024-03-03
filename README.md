@@ -48,7 +48,7 @@ Stable Marriage and Its Relation to Other Combinatorial Problems: An Introductio
 
 
 ## Task 1
-Here we translated our **IS_STABLE** and **fun_algo** from our first assignments Python implementation to C++. Below we wll provide a brief tutorial on how to compile and run the code from our **Task 1** folder in **Unix**.
+Here we translated our 1st assignments **IS_STABLE** and **fun_algo** functions to C++. Below we wll provide a brief tutorial on how to compile and run the code from our **Task 1** folder on a **Unix** system.
 ### Compiling 
 <a name="custom_anchor_name"></a>
 #### Step 1) Compiling Functions
@@ -177,6 +177,7 @@ Run the setup file with all default options. **If you are not an administrator y
 Once installed, run **Code::Blocks**; you should immediately encounter a dialog box, just click ok. Then in the toolbar select **File -> New -> Project**. A list of **project templates** should appear, select **Empty Project** and press go. 
 
 
+<img width="529" alt="Step 2 1" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/de1ed30f-705a-4c33-9880-8424e9c53f73">
 
 
 The **project wizard** will appear, proceed through each window. Select **C++** on the language options. Call your **project** an appropriate name and ensure its location is **within the same drive you installed Code::Blocks in** (in most cases that's C drive (C:) e.g. (C:\Users\user(you!)\Documents\C++)). Remember where you stored it!
@@ -189,12 +190,29 @@ All our files our coded in **C++17** language standard, so we must also ensure o
 
 > Have g++ follow the C++17 ISO C++ language standard [-std=c++17]
 
+<img width="881" alt="Step 3" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/a80f601c-b915-4f71-a6f5-e14a32ec337e">
+
+
 #### Step 4) Project Files
 
 Download the **Task 5** header and source files from my repository here. Place them in the same directory as your **new empty project**. You need to tell **Code::Blocks** that the files in the directory should be included within the project workspace. Go to the toolbar **Project -> Add Files** and select all of the files you downloaded. 
 
-They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already defined. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. A **Windows Terminal** should appear with the correct output. 
+<img width="317" alt="Step 4" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/e1b91b02-04fb-4ea5-9d81-0c28f87793ce">
 
+<img width="442" alt="step 4 1" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/97d51f56-ea99-4ca2-a241-65eef1aabcea">
+
+
+They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already defined. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. 
+
+<img width="957" alt="step5" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/67f91219-986b-4e06-b6b9-c31b2bdf1dfc">
+
+
+
+
+
+
+
+After compiling, w **Windows Terminal** should appear with the correct output. 
 
 ```
 Output:
