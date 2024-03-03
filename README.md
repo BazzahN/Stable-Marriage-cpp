@@ -1,7 +1,11 @@
 # Stable-Marriage-cpp
 This repository contains all my solutions to the C++ assignment. I also include brief descriptions on how to run the code for each of the **Tasks: 1,2,3 and 5**. For saftey reasons, I have chosen to ommit the self-referential **Task 4**, so as to prevent the reader from falling into a recursive loop.
 
->Add a README markdown file containing instructions for compiling and running your code for each of the Tasks 1, 2, and 3. Check that your README file renders properly on github.
+>Create a github repository for your code from Tasks 1, 2 and 3.
+
+>Add a README markdown file containing instructions for compiling and running your code for each of the >Tasks 1, 2, and 3. Check that your README file renders properly on github.
+
+>Add your notebook from Task 3 to the repository.
 
 ## Folders
 
