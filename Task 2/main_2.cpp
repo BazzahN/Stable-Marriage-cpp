@@ -5,7 +5,7 @@
 #include <string>
 
 #include "fun_algo.h"
-#include "utils.h" //Used to read in csv files
+#include "utils.h" //Used to read in .txt files in comma seperated format
 
 
 
