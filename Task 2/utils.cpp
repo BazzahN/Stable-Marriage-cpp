@@ -86,11 +86,7 @@ std::map<int,std::vector<int>> file_rw_pref_dict(const std::string& filename)
 
     std::map<int,std::vector<int>> pref_table;
 
-    std::string txt {".txt"};
-
-    //std::string {filename + txt};
-
-    std::list<std::vector<int> > line {readtxt(filename + txt)};
+    std::list<std::vector<int> > line {readtxt(filename)};
 
     int i_count {0};
 
