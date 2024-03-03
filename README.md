@@ -88,14 +88,14 @@ If run correctly **main_2.out** will use the **fundamental algorithm** to find a
 ### File Format
 Preference tables must be represented as an $NxN$ ',' seperated matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed).
 
-This is for individuals 
+This is for individuals $A  = \{1,2,3,4\}$
 
-'''
+```
 1,2,4,3 // <- 1s prefs for elements in B 
 3,1,4,2 // <- 2 ^       
 3,2,4,1 // <- 3 ^
 2,1,3,4 // <- 4 ^
-'''
+```
 ### Compiling and Running main_2.cpp
 
 #### Step 1 & 2) Compiling Functions and Builing main_2.cpp
