@@ -98,7 +98,7 @@ We have modified our original source code; now it can read preference tables sto
 If run correctly **main_2.out** will use the **fundamental algorithm** to find a stable matching from the preference tables within the specified (and correctly formatted) **.csv/.txt** files.
 
 ### File Format
-Preference tables must be represented as an $N \times N $ matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed); matrix elements should be seperated by a `'`.
+Preference tables must be represented as an $N \times N$ matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed); matrix elements should be seperated by a `'`.
 
 This is for individuals $A  =$ $`\{1,2,3,4\}`$
 
