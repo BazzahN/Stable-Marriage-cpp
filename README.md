@@ -142,23 +142,23 @@ Female | Male
 ```
 
 ## Task 3
-In this task we compare the difference in runtimes for our implementation of the **fundamental algorithm** and **IS_STABLE** in **python** and **C++**. The report on this comparison has been made into a jupyter notebook, which can be found in the **Task 3** folder here. The report contains a description of the studys methods and results.
+In this task we compare the difference in runtimes for our implementation of the **fundamental algorithm** and **IS_STABLE** (**IS_STABLE** is nested within both **fundamental algorithm** functions ) in **python** and **C++**. A report on this comparison is a jupyter notebook, which can be found in the **Task 3** folder here. The report contains a description of the studys methods and results.
 
 We have modified our main file slightly for this study, but it can be compiled in the exact same way applied in previous tasks. The only difference is the inclusion of an additional argument; specifying the amount of times to repeat the fundamental algortihm. We include this extra argument as our algorithm is very fast. To calculate an accurate runtime we repeat $M$ times and divide the sum of these measurments by $M$. 
 
-The modified code is in **main_3.cpp**, build in the same way as **Task 1** and **Task 2**. You can then run **main_3.out** using the code below; include all the required arguments. :
+The modified code is in **main_3.cpp**, it is built in the same way as **Task 1** and **Task 2**. You can run **main_3.out** using the code below:
+```
+$ ./main_3.out "Aout_n" "Bout_n" M
 
 ```
-$ ./main_3.out "filename1" "filename2" M
+$M$ must be a positive number of type **int**. Also, the format of the filename string is different as the code is somewhat automated to make repeated time measurments easier. For each of the varying set lengths $n \in N$ there are 4 randomly generated preference tables, denoted 0,1,2,3. The code will cycle through these and take the average execution time. 
 
-```
-M must be a positive number of type **int**.
 
 
 
 ## Task 5
 
-This method-although not perfect in all ways-is an easy way to compile and run C++ programs in Windows. We make use of the **Integrated development environment (IDE)** [Code::Blocks](https://www.codeblocks.org/), as one version includes **MinGW**- a compiler based on **GCC** to build and run C++ files on Windows. The caveat is that it doesn not install **MinGW** at the system level, and so compiling these files can only be done in Code::Blocks.
+This method-although not perfect in all ways-is an easy way to compile and run C++ programs in Windows. Here, we make use of the **Integrated development environment (IDE)** [Code::Blocks](https://www.codeblocks.org/), as one version includes **MinGW**- a compiler based on **GCC** which  builds and runs C++ files on Windows. The drawback is that it does not install **MinGW** at the system level, and so compiling these files can only be done within the Code::Blocks 'project' enviroments.
 
 ### Method
 
@@ -179,11 +179,11 @@ Once installed, run **Code::Blocks**; you should immediately encounter a dialog 
 
 
 
-The **project wizard** will appear, proceed through each window. Select **C++** on the language options. Call your **project** an appropriate name and ensure its location is **within the same drive you installed Code::Blocks in** (in most cases that's C drive (C:))
+The **project wizard** will appear, proceed through each window. Select **C++** on the language options. Call your **project** an appropriate name and ensure its location is **within the same drive you installed Code::Blocks in** (in most cases that's C drive (C:) e.g. (C:\Users\user(you!)\Documents\C++)). Remember where you stored it!
 
 #### Step 3) Project and C++ Language Standard
 
-All our files our coded in **C++17** language standard, so we must also ensure our compile knows this. Navigate to **Toolbar -> Settings -> Compiler**. The **Global Compiler Settings** window should pop up. 
+All our files our coded in **C++17** language standard, so we must also ensure our compiler knows this. Navigate to **Toolbar -> Settings -> Compiler**. The **Global Compiler Settings** window should pop up. 
 
 **Tick the box** marked:
 
@@ -191,9 +191,9 @@ All our files our coded in **C++17** language standard, so we must also ensure o
 
 #### Step 4) Project Files
 
-Download the **Task 5** header and source files from my repository here. Place them in the same directory as your **new empty project**. You need to tell **Code::Blocks** that the files are in the same directory, go to the toolbar **Project -> Add Files** and select all of the files you downloaded. 
+Download the **Task 5** header and source files from my repository here. Place them in the same directory as your **new empty project**. You need to tell **Code::Blocks** that the files in the directory should be included within the project workspace. Go to the toolbar **Project -> Add Files** and select all of the files you downloaded. 
 
-They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already declared. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. A **Windows Terminal** should appear with the correct output. 
+They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already defined. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. A **Windows Terminal** should appear with the correct output. 
 
 
 ```
