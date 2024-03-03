@@ -109,7 +109,7 @@ $ ./main_2.out "prefF.txt" "prefH.txt"
 ```
 
 Order of the file names doesn't matter, but the format of the identified matching will vary, i.e. if argument order is "fileA" "fileB" then the matchings will be represented like this
-$(A_1,B_1),(A_2,B_2)....(A_n,B_n)$. 
+$(A_1,B_1),(A_2,B_2)....(A_n,B_n)$. **Note: if your preference tables are .csv files, change .txt to .csv**
 
 For the files we have given in **Task 2** folder, the output will be:
 
