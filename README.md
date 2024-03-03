@@ -26,17 +26,25 @@ main_2.cpp //Ditto for Task 2
 main_3.cpp //Ditto for Task 3
 Results.ipynb //Results for execution time comparisons
 
-
+//Task 5
+main.cpp //Demo source file for use in Code::Blocks
 ```
 ### File Description
-// In this section include a description for each of the files 
+- **IS_STABLE** A **bool** function which accepts two map<int,vector<int>> type preference tables and a list<vector<int>> of potential matchs. The function determines if the potential match is stable. Outputs 1 if stable and 0 if not.
+
+- **fun_algo** A function which accepts two map<int,vector<int>> type preference tables. Using the `fundamental algorithm` outlined in [[1]](#1), this function determines a **stable matching solution** for the given preference tables. The solution is returned as a list<vector<int>>. If the argument **rout = true** then the function will print the results of this matching and indicate if it's stable.
+
+- **utils** A collection of functions used in **IS_STABLE**, **fun_algo** and **main**
+
+
+## References
+<a id="1">[1]</a> 
+Knuth, Donald Ervin. (1996). 
+Stable Marriage and Its Relation to Other Combinatorial Problems: An Introduction to the Mathematical Analysis of Algorithms.”, 9-12.
+
 
 ## Task 1
-
-### Preference Tables and Potential Match 
-// In this section include the preference tables used in the code.
-
-
+Here we translated our **IS_STABLE** and **fun_algo** from our first assignments Python implementation to C++. Below we wll provide a brief tutorial on how to compile and run the code from our **Task 1** folder in **Unix**.
 ### Compiling 
 <a name="custom_anchor_name"></a>
 #### Step 1) Compiling Functions
@@ -184,3 +192,18 @@ Download the **Task 5** header and source files from my repository here. Place t
 They should then appear under **Sources**, click on **main.cpp**; you may change the preference tables I have already declared. In the toolbar click **Run & Compile** (the cog and the green play button) in the toolbar. A **Windows Terminal** should appear with the correct output. 
 
 
+```
+Output:
+Stable Match Found! 
+
+Identified Pairings:
+Female | Male
+  1    |   2
+-------|-------
+  2    |   3
+-------|-------
+  3    |   4
+-------|-------
+  4    |   1
+-------|-------
+```
