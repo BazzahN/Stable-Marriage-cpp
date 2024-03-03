@@ -156,10 +156,11 @@ $M$ must be a positive number of type **int**. Also, the format of the filename 
 
 ### Compiler Settings in Code::Blocks
 
-My **C++** measurments were taken in **Code::Blocks** (See **Task 5**), as you will find out in the notebook, I also obtained results for my **C++** code; compiled with the `-O3` optimiser flag. To specify compiler settings in **Code::Blocks** head to the toolbar **Project -> Build options...**
+My **C++** measurments were taken in **Code::Blocks** (See **Task 5**), as you will find out in the notebook, I also obtained results for my **C++** code; compiled with the `-O3` optimiser flag. To specify compiler settings in **Code::Blocks** head to the toolbar **Project -> Build options...**. You should be shown the compiler options for this project, you can choose the optimiser arguments here. 
 
+<img width="713" alt="compiler settings" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/7a5358b3-40ad-4278-9bb2-959be10ac91f">
 
-
+This can be done in the Global Compiler Settings too, if you wish, but be careful. 
 ## Task 5
 
 This method-although not perfect in all ways-is an easy way to compile and run C++ programs in Windows. Here, we make use of the **Integrated development environment (IDE)** [Code::Blocks](https://www.codeblocks.org/), as one version includes **MinGW**- a compiler based on **GCC** which  builds and runs C++ files on Windows. The drawback is that it does not install **MinGW** at the system level, and so compiling these files can only be done within the Code::Blocks 'project' enviroments.
