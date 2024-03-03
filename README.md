@@ -86,15 +86,15 @@ We have modified our original source code; now it can read preference tables sto
 If run correctly **main_2.out** will use the **fundamental algorithm** to find a stable matching from the preference tables within the specified (and correctly formatted) **.csv/.txt** files.
 
 ### File Format
-Preference tables must be represented as an $NxN$ ',' seperated matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed).
+Preference tables must be represented as an $N \times N $ matrix, where $N$ is the number of individuals in each set $A$ and $B$, this is identical for both sets. Below is the correct implementation of a preference table in a .txt file (# comments should be removed); matrix elements should be seperated by a `'`.
 
 This is for individuals $A  =$ $`\{1,2,3,4\}`$
 
 ```
-1,2,4,3 // <- 1s prefs for elements in B 
-3,1,4,2 // <- 2 ^       
-3,2,4,1 // <- 3 ^
-2,1,3,4 // <- 4 ^
+1,2,4,3 # <- 1s prefs for elements in B 
+3,1,4,2 # <- 2 ^       
+3,2,4,1 # <- 3 ^
+2,1,3,4 # <- 4 ^
 ```
 ### Compiling and Running main_2.cpp
 
@@ -105,7 +105,7 @@ Use the method from [**Task 1**](#custom_anchor_name) to build **main_2.cpp**. T
 
 We can run **main_2.out** the same way as before, only this time we specify the file names of our preference tables. I have used the names of the files included in the **Task 2** Folder:
 ```
-$ ./main_2.out "prefF" "prefH"
+$ ./main_2.out "prefF.txt" "prefH.txt"
 ```
 
 Order of the file names doesn't matter, but the format of the identified matching will vary, i.e. if argument order is "fileA" "fileB" then the matchings will be represented like this
