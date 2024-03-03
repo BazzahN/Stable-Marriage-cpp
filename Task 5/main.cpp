@@ -1,8 +1,6 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include <list>
-#include <string>
 
 #include "fun_algo.h"
 
@@ -28,7 +26,7 @@ int main()
 
     };
 
-
+    //Runs Fundamental Algorithm
     fun_algo(A_prefs,B_prefs,true);
 
 
