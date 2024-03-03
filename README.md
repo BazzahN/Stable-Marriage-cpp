@@ -154,6 +154,10 @@ $ ./main_3.out "Aout_n" "Bout_n" M
 $M$ must be a positive number of type **int**. Also, the format of the filename string is different as the code is somewhat automated to make repeated time measurments easier. For each of the varying set lengths $n \in N$ there are 4 randomly generated preference tables, denoted 0,1,2,3. The code will cycle through these and take the average execution time. 
 
 
+### Compiler Settings in Code::Blocks
+
+My **C++** measurments were taken in **Code::Blocks** (See **Task 5**), as you will find out in the notebook, I also obtained results for my **C++** code; compiled with the `-O3` optimiser flag. To specify compiler settings in **Code::Blocks** head to the toolbar **Project -> Build options...**
+
 
 
 ## Task 5
@@ -229,3 +233,12 @@ Female | Male
   4    |   1
 -------|-------
 ```
+
+#### Extra Step) Just one more thing
+
+If you want your **main function** to take command line arguments-as seen in **Task 2** and **Task 3**-you can do that in Code::Blocks as well. While in your **projects workspace** navigate to the toolbar **Project -> Set programs' arguments...**. Press ok, and the next time you run your compiled code it should automatically execute itself using the command line arguments your provided. I have provided an example for the **Task 2** code
+
+<img width="228" alt="cmdline" src="https://github.com/BazzahN/Stable-Marriage-cpp/assets/72982319/1ce4e03d-71ec-4553-bb2b-f9250b11f942">
+
+
+
